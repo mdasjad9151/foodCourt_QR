@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=cs, initial-scale=1.0">
+    <title>signup</title>
+<style>
+    .error{
+        font-colour : red
+    }
+</style>
+</head>
+<body>
+ <form action="" method  = 'POST' novalidate>
+    {% csrf_token %}
+   
+    {% for fm in  from %}
+    {{fm.label_tag}}
+    {{fm}} 
+    <div class = 'error'>{{fm.errors|striptags}}</div><br> <br>
+    {% endfor %}
+    <input type="submit" value="Submit">
+ </form>
+    
+</body>
+</html>

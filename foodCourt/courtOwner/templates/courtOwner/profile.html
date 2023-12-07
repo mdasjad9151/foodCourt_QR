@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner profile</title>
+    <style>
+        .head{
+            display: flex;
+            align-items: center;
+        }
+        .logout{
+            padding: 30px;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="head">
+    <h1>This is profile page. it should be design later</h1>
+    <div class="logout"><a href="{% url 'logout' %}">logout</a></div>
+</div>
+    <div class="create">
+        <a href="{% url "addcourt" %}">Add court details</a>
+    </div>
+</body>
+</html>
